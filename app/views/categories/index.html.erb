@@ -1,0 +1,11 @@
+<h1>Available Categories</h1>
+
+<% @categories.each do |t| %>
+
+	<%= link_to t.name, categories_individual_url(t.id) %><br>
+	
+<% end %>
+
+<br><br>
+
+<%= link_to 'Add a new Category', categories_new_url %>

@@ -1,0 +1,4 @@
+<h1><%= @category.name %></h1>
+
+<%= link_to 'Delete', categories_delete_url(params[:id]), confirm: 'Are you sure?', :method => :delete  %>
+|<%= link_to ' Edit', categories_edit_url(params[:id]) %>
