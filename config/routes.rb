@@ -8,4 +8,6 @@ HomeInv::Application.routes.draw do
   delete '/categories/:id' => 'categories#destroy', :as => :categories_delete
   get '/categories/:id/edit' => 'categories#edit', :as => :categories_edit
 
+  # This is a small change.
+
 end
